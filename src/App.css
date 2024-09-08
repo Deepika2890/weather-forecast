@@ -1,38 +1,82 @@
-.App {
+.app {
   text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-info {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+
+.weather-info{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  background-color: transparent;
+  height: 60vh;
+  width: 20vw;
+  margin: 20px
+;
+border: 2px solid rgb(96, 179, 228);
 
-.App-link {
-  color: #61dafb;
 }
+.app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(186, 237, 237);
+  overflow-y: auto;
+}
+.heading{
+  color: blue;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+.user-input{
+  border-width: 0px;
+  height: 20px;
+  width: 200px;
+  border-radius: 5px;
+}
+.main-heading{
+  color: darkmagenta;
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.weather{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18
+  px;
+}
+.button{
+  height: 40px;
+  width: 80px;
+  border-width: 0px;
+  background-color: transparent;
+  font-size: 35px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
